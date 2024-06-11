@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display:block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(bgimg.jpg);
+    background-size:cover;
+    padding: 10px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    transition: padding 0.3s;
+    backdrop-filter: blur(10px); 
+    margin: 0 auto; 
+    
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: width 0.3s, height 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.profile h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #222;
+    transition: font-size 0.3s;
+}
+
+.profile h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+    color: #333;
+    transition: font-size 0.3s;
+}
+
+.profile p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+    transition: font-size 0.3s;
+}
+
+
+.btn {
+    font-size: 17px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    margin-bottom: 10px;
+    color: #555;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+  
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #0056ff;
+    transition: 0.5s ease;
+}
+  
+.btn:hover {
+    color: #fff;
+    transition-delay: 0.5s;
+}
+  
+.btn:hover::before {
+    width: 100%;
+}
+  
+.btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #0056ff;
+    transition: 0.4s ease;
+    z-index: -1;
+}
+  
+.btn:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+}
+
+  
+
+.links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto 10px auto; 
+    transition: background-color 0.3s, padding 0.3s;
+    width: 80%;
+}
+
+.links a i {
+    font-size: 20px; 
+    margin-right: 10px;
+}
+
+
+.imperium{
+    background-color: black;
+}
+.instagram {
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); 
+}
+
+.whatsapp {
+    background-color: #128C7E; 
+}
+
+.facebook {
+    background-color: #1877F2; 
+}
+
+.github{
+    background-color: #2b3137;
+}
+
+.links a:hover {
+    opacity: 0.9;
+}
+
+footer {
+    position:static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    margin-top: 15px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-content > div {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 50px;
+    }
+    .profile img {
+        width: 250px; 
+        height: 250px;
+    }
+    .profile h1 {
+        font-size: 20px;
+    }
+    .profile p {
+        font-size: 14px;
+    }
+    .links a {
+        padding: 8px;
+        margin: 10px 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 10px;
+    }
+    .profile img {
+        width: 150px;
+        height: 150px;
+    }
+    .profile h1 {
+        font-size: 18px;
+    }
+    .profile p {
+        font-size: 12px;
+    }
+    .links a {
+        padding: 6px;
+    }
+}
