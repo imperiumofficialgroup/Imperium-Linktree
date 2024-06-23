@@ -1,62 +1,297 @@
 <!DOCTYPE html>
-<html>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-.bgimg {
-  background-image: url('comingsoon.jpg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: #222;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
-
-.topleft {
-  position: absolute;
-  top: 0;
-  right: 16px;
-}
-
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPERIUM</title>
+    <link rel="stylesheet" href="imperium.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
 <body>
 
-<div class="bgimg">
-  <div class="topleft">
-    <p>Imperium</p>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="https://forms.gle/TMaxFe4XZzweYDQq8"><img src="IMPERIUM-removebg-preview.png" alt="Imperium Logo"></a>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#why-join">Why Join Us?</a></li>
+                <li><a href="#community">Community Programs</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#Contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>  
   </div>
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p>35 days left</p>
+</header>
+
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Empowering Future Innovators and Providing Tech & Media Solutions for Businesses</h1>
+    <div class="cta">        
+    <a href="https://forms.gle/TMaxFe4XZzweYDQq8" class="cta"><button class="cssbuttons-io-button">
+      Join Our Community
+      <div class="icon">
+        <svg
+          height="24"
+          width="24"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path
+            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </button></a>
+            <a href="#services" class="cta"><button class="button">
+              <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+             <p>Explore Our Services</p>
+           </button></a></div>      
   </div>
-  <div class="bottomleft">
-    <p>We Bring Imaginations to Reality</p>
+  <div class="hehe"><img src="4393.png" alt="Hero"></div>  
+</section>
+
+
+    <div class="container">
+      <div class="section" id="about">
+          <div class="text">
+              <h2>About Us</h2>
+              <p>Welcome to Imperium, where innovation meets education and business excellence. Our organization is dedicated to empowering individuals and businesses through a unique blend of community-driven learning and cutting-edge technology services.</p>
+          </div>
+          <div class="image">
+              <img src="aboutus.jpg" alt="About Us">
+          </div>
+      </div>
+      <div class="section" id="edu">
+          <div class="text">
+              <h2>Community and Education</h2>
+              <p>At Imperium, we believe in the transformative power of education. Our community platform offers free skills training and technology education across various domains. We provide hands-on experience through real-world projects, enabling students to apply their knowledge and earn credits that reflect their achievements. Our goal is to foster a culture of continuous learning and growth, preparing our members for successful careers in the tech industry.</p>
+          </div>
+          <div class="image">
+              <img src="community.png" alt="Community and Education">
+          </div>
+      </div>
+      <div class="section" id="company">
+          <div class="text">
+              <h2>Company and Services</h2>
+              <p>Imperium is not just an educational hub, we are also a dynamic business entity. Our company encompasses both proprietary ventures and a wide range of professional services. In our service division, we offer top-tier tech solutions, including app and web development, media production, and more. Our team of experts is dedicated to delivering innovative and effective solutions tailored to meet the unique needs of our clients.</p>
+          </div>
+          <div class="image">
+              <video src="services.mp4" autoplay muted loop></video>
+          </div>
+      </div>
+      <div class="section" id="int">
+          <div class="text">
+              <h2>Intellectual Property Hub</h2>
+              <p>Innovation is at the heart of Imperium. We are proud to be an intellectual property hub, with numerous exciting projects in development. Our commitment to creating and nurturing new ideas ensures that we stay at the forefront of technological advancement, continuously contributing to the industry's evolution.</p>
+          </div>
+          <div class="image">
+            <video src="intellctual.mp4" autoplay muted loop></video>
+          </div>
+      </div>
   </div>
-</div>
+
+  <section class="why-join" id="why-join">
+    <div class="containers">
+        <h2>Why You Should Join Our Community</h2>
+        <p>Joining our community offers numerous personal and professional growth benefits.<br> Here’s why you should consider becoming a part of it:
+        </p>
+        <div class="cardss">
+            <div class="cards">
+                <h3>Access a wide range of free courses and resources to enhance your skills and knowledge.</h3>
+            </div>
+            <div class="cards">
+                <h3>Engage in hands-on projects to apply your learning practically and stay motivated.</h3>
+            </div>
+            <div class="cards">
+                <h3>Get scouted for industry-level projects to boost your leadership and teamwork skills.</h3>
+            </div>
+            <div class="cards">
+                <h3>Earn certificates for completing courses and receive acknowledgment for long-term commitment.</h3>
+            </div>
+            <div class="cards">
+                <h3>Gain valuable credits for completed projects, showcasing your achievements and expertise.</h3>
+            </div>
+        </div>
+    </div>
+</section>
+  
+  <section id="community" class="section-padding">
+    <h2>Community Programs</h2>
+    <div class="programs">
+        <div class="program">
+            <h3>Coding</h3>
+            <img src="coding.jpg"></img>
+            <p>Our Coding program offers comprehensive training in Web Development, App Development, and Database Management. Participants gain hands-on experience by working on real-world projects, enhancing their skills and earning credits for their efforts.</p>
+        </div>
+        <div class="program">
+            <h3>Media</h3>
+            <img src="media.jpg"></img>
+            <p>The Media program provides education in Video Production and Graphic Design. Students learn the latest industry techniques and tools, working on creative projects that prepare them for careers in the media industry.</p>
+        </div>
+        <div class="program">
+            <h3>Finance</h3>
+            <img src="finance.png"></img>
+            <p>Our Finance program focuses on Financial Literacy and Management. We equip students with essential knowledge and skills to manage finances effectively, through practical projects that simulate real-life financial scenarios.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="services" class="section-padding">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Web Development</h3>
+            <img src="webdev.png"></img>
+            <p>Imperium specializes in building responsive and engaging websites. Our team leverages the latest technologies to create websites that are not only visually appealing but also highly functional and user-friendly.</p>
+        </div>
+        <div class="service">
+            <h3>App Development</h3>
+            <img src="appdev.png"></img>
+            <p>We create innovative mobile applications tailored to meet the specific needs of our clients. Our app development services cover  Android platforms, ensuring a wide reach and impact.</p>
+        </div>
+        <div class="service">
+            <h3>Media <br>Solutions</h3>
+            <img src="media1.png"></img>
+            <p>Our Media Solutions include video production and graphic design services. We help businesses and individuals create compelling visual content that communicates their message effectively and captivates their audience.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="team" class="section-padding">
+  <h2>Our Founders</h2>
+  <hr><br><br>
+  <div class="team-members">
+      <div class="card">
+          <div class="img"><img src="kashinath1.jpg" alt="Kashinath Patil"></div>
+          <span>Founder, CFO</span>
+          <p class="info">I’m Kashinath Patil, currently pursuing BE in Mechanical at ADYPSOE, Pune. At Imperium I oversee the company's strategic planning, develop plan of action for upcoming projects, and supervise overall management. I contribute to the community by giving finance lectures. I am passionate about finance & Stock Market.</p>
+          <div class="share">
+              <a href="https://www.linkedin.com/in/kashinath-patil-b8a309217/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/kashinath20"><i class="fa-brands fa-square-github"></i></a>
+              <a href="https://www.instagram.com/kashinathpatil122?igsh=MWZseHBrYndxMzNwcQ=="><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <a href="kashinath/kashinath.html"><button>Resume</button></a>
+      </div>
+      <div class="card">
+          <div class="img"><img src="atharva.jpg" alt="Atharva Kapile"></div>
+          <span>Co-Founder, CEO</span>
+          <p class="info">I'm Atharva, currently pursuing a BTech in Cyber Security at ADYPU, Pune. I have a profound passion for cyber security and web development, I excel in managing overall company operations while actively engaging in web projects & contributing to social media. I am passionate about coding.</p>
+          <div class="share">
+              <a href="https://www.linkedin.com/in/atharva-kapile-20a34b28b/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/akapile37"><i class="fa-brands fa-square-github"></i></a>
+              <a href="https://www.instagram.com/atharva_kapile/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <a href="atharva/atharva.html"><button>Resume</button></a>
+      </div>
+      <div class="card">
+          <div class="img"><img src="aarya.jpg" alt="Aarya Dimble"></div>
+          <span>Co-Founder, CMO</span>
+          <p class="info">I'm Aarya Dimble, currently pursuing a BTech in Cyber Security at ADYPU, Pune. At Imperium, I manage marketing strategies, oversee social media, and contribute to web development projects. I am passionate about cybersecurity and love to code.</p>
+          <div class="share">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/axrya"><i class="fa-brands fa-square-github"></i></a>
+              <a href="https://www.instagram.com/a_xrya_/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <a href="aarya/aarya.html"><button>Resume</button></a>
+      </div>
+      <div class="card">
+          <div class="img"><img src="aditya.jpg" alt="Aditya Chavan"></div>
+          <span>Co-Founder, CTO</span>
+          <p class="info">I’m Aditya Chavan, currently pursuing a BTech in Cyber Security at ADYPU, Pune. At Imperium, I manage the tech department and contribute to app development and web development. I am passionate about learning new things.</p>
+          <div class="share">
+              <a href="https://www.linkedin.com/in/aditya-chavan-20b465315/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-square-github"></i></a>
+              <a href="https://www.instagram.com/aditya_chavan1?igsh=MTh1dGk5aXI2N3N3Zw=="><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <a href="aditya/aditya.html"><button>Resume</button></a>
+      </div>
+     <!--<div class="card">
+          <div class="img"><img src="siddharth.jpg" alt="Siddharth Khade"></div>
+          <span>Co-Founder, COO</span>
+          <p class="info">I’m Siddharth Khade, currently pursuing a BCS in IT at Mit AOE, Pune. At Imperium, I oversee overall operations both within the company and the community, while also contributing to database management. I am passionate about coding.</p>
+          <div class="share">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-square-github"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <a href="siddharth/siddharth.html"><button>Resume</button></a>
+      </div>
+  </div>-->
+</section>
+
+
+    <section id="books" class="section-padding">
+        <h2>Books and Resources</h2>
+        <p>We are still in the development phase so we will be updating this soon. Thank you for your patience.</p>
+    </section>
+
+    <button class="Btn">
+        <svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
+      <p class="texts">Back to Top</p>
+      </button>
+
+    <footer class="footer" id="Contact">
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="logo">
+                    <img src="IMPERIUM-removebg-preview.png" alt="Imperium Logo">
+                </div>
+                <p>Imperium is dedicated to empowering individuals and businesses through community-driven learning and cutting-edge technology services.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#why-join">Why Join Us?</a></li>
+                    <li><a href="#community">Community Programs</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    
+                </div>
+            </div>
+            <div class="newsletter">
+                <h3>Connect with us</h3>
+                <p>"Join us at Imperium to forge a future of growth and success together."</p>
+                    <a href="https://forms.gle/TMaxFe4XZzweYDQq8"><button>Join Now</button></a>               
+            </div>
+        </div><hr>
+        <div class="footer-legal">
+            <p>&copy; 2024 Imperium. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
 
 </body>
+
+<script src="imperium.js"></script>
+
 </html>
