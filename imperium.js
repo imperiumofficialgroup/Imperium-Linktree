@@ -207,3 +207,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+//loader
+
+document.addEventListener("DOMContentLoaded", function() {
+    // When the page is fully loaded
+    window.onload = function() {
+        // Hide the loader
+        var loader = document.getElementById('loader');
+        loader.style.display = 'none';
+
+        // Show the content
+        var content = document.getElementById('content');
+        content.style.display = 'block';
+    };
+});
+
