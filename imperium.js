@@ -209,17 +209,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //loader
-
-document.addEventListener("DOMContentLoaded", function() {
-    // When the page is fully loaded
-    window.onload = function() {
-        // Hide the loader
-        var loader = document.getElementById('loader');
-        loader.style.display = 'none';
-
-        // Show the content
-        var content = document.getElementById('content');
-        content.style.display = 'block';
-    };
-});
+// Function to show the loader
+function showLoader() {
+    const loaderContainer = document.getElementById('loader-container');
+    loaderContainer.style.visibility = 'visible';
+    loaderContainer.style.display = 'flex';  // Ensure the loader is displayed
+    console.log('Loader shown');
+  }
+  
+  // Function to hide the loader
+  function hideLoader() {
+    const loaderContainer = document.getElementById('loader-container');
+    loaderContainer.style.visibility = 'hidden';
+    loaderContainer.style.display = 'none';  // Completely remove the loader from layout
+    console.log('Loader hidden');
+  }
+  
+  // Show loader immediately
+  showLoader();
+  
+  // Hide loader after the page has fully loaded
+  window.onload = () => {
+    console.log('Page fully loaded');
+    hideLoader();
+  };
 
