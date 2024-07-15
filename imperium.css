@@ -98,6 +98,48 @@ p{
     color: white;
 }
 
+/* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0 70px;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 90px;
+      right: 0;
+      width: 100%;
+      background: linear-gradient(90deg,  #003165, #0069d9, #004793);
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      margin-top: 5px;
+      margin-right: 0px;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+  
+    .nav-links.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  
+    .nav-links li {
+      padding: 10px 0;
+    }
+  
+    .nav-links a {
+      padding: 10px 20px;
+      font-size: 1em;
+    }
+  }
+
 /* Hero Section */
 .hero {
     display: flex;
@@ -738,9 +780,9 @@ footer {
     text-align: center;
 }
 
-.why-join .container {
-    max-width: 1200px;
-    margin: 0 auto;
+.why-join .containers {
+    max-width: 100%;
+    margin: 20px 50px;
 }
 
 .why-join h2 {
@@ -952,43 +994,7 @@ footer p, footer h3 {
         font-size: smaller;
         margin: 5px;
     }
-    .navbar {
-        padding: 0 20px;
-    }
-    .logo img{
-       padding-left: 20px;
-    }
-    .nav-links {
-        flex-direction: column;
-        position: absolute;
-        top: 90px;
-        left: -120%;
-        width: 90%;
-        background-color: #003165;
-        text-align: center;
-        transition: left 0.3s ease-in-out;
-        z-index: 999;
-    }
-
-    .nav-links.show {
-        left: 0;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .menu-icon {
-        display: block;
-        order: -1; /* Move the menu icon to the left of the flex container */
-    }
-
-    .logo {
-        flex-grow: 1;
-        display: flex;
-        justify-content: center;
-    }
-
+   
     .Btn{
         left: 100;
         bottom: 50;
