@@ -1484,3 +1484,40 @@ footer p, footer h3 {
       stroke-dashoffset: -351.86;
     }
   }
+
+
+.book-section {
+    display: flex;
+    flex-direction: row;
+    gap: 40px; /* Increase gap between cards */
+}
+
+.book-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    border-radius: 8px;
+    width: 350px; /* Increase card width */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align all content */
+}
+
+.book-image-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Set a fixed height for the image container */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+.book-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
