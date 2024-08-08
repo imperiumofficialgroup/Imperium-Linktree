@@ -1513,6 +1513,7 @@ footer p, footer h3 {
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
     perspective: 1000px; /* Add perspective for 3D effect */
+    border: solid 1px;
 }
 
 .book-cover {
